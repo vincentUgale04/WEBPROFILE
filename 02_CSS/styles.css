@@ -1,0 +1,458 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #272829;
+}
+
+a {
+  /* color: var(--Cetacean--); */
+  text-decoration: none;
+}
+
+a:hover {
+  /* color: var(--VistaBlue--); */
+  pointer-events: auto;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+::-moz-selection {
+  background: var(--VistaBlue--);
+  color: var(--BrightGray--);
+}
+
+::selection {
+  background: var(--VistaBlue--);
+  color: var(--BrightGray--);
+}
+
+:root {
+  /* Color Pallete (Professional Blue) */
+  /* https://www.schemecolor.com/professional-blue-and-grey-color-scheme.php */
+  --Cetacean--: #000b4f;
+  --DarkCornflowerBlue--: #20368f;
+  --VistaBlue--: #829cd0;
+  --BrightGray--: #ebebeb;
+  --DarkSilver--: #6d6d6d;
+  --DarkCharcoal--: #323232;
+
+  /* Extra Color */
+  --lightgold--: #ffd700;
+  --darkgold--: #eebc18;
+  /* White */
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  display: none;
+}
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 991px) {
+  #header {
+    width: 300px;
+    background: none;
+    border-right: none;
+    left: -300px;
+  }
+}
+
+@media (min-width: 991px) {
+  #main {
+    margin-left: 100px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: var(--BrightGray--);
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: var(--VistaBlue--);
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a span,
+.nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: var(--BrightGray--);
+}
+
+.display {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+.logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+}
+
+.logo img {
+  max-height: 40px;
+  border-radius: 20px;
+}
+
+@media (min-width: 992px) {
+  .nav-menu a,
+  .nav-menu a:focus {
+    width: 57px;
+  }
+
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    display: none;
+  }
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover > a {
+  color: var(--DarkCharcoal--);
+  background: var(--BrightGray--);
+}
+
+.nav-menu a:hover span,
+.nav-menu .active span,
+.nav-menu .active:focus span,
+.nav-menu li:hover > a span {
+  color: var(--DarkCharcoal--);
+}
+
+.nav-menu a:hover,
+.nav-menu li:hover > a {
+  width: 100%;
+}
+
+.nav-menu a:hover span,
+.nav-menu li:hover > a span {
+  display: block;
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 9998;
+  border: 0;
+  color: var(--VistaBlue--);
+  background: var(--BrightGray--);
+  font-size: 28px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 0;
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active #header {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle {
+  color: var(--DarkCharcoal--);
+  background-color: var(--BrightGray--);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: var(--BrightGray--) top right no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hero img {
+  width: 100%;
+  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  margin-top: -60px;
+  margin-left: 40px;
+  height: 275px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+#hero .div-img-bg {
+  padding-bottom: 30px;
+  border: 20px solid var(--VistaBlue--);
+}
+
+@media (min-width: 992px) {
+  #hero {
+    padding-left: 160px;
+  }
+}
+
+#hero .profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#hero .profilename {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: var(--VistaBlue--);
+}
+
+#hero p {
+  color: var(--DarkCharcoal--);
+  margin: 15px 0 0 0;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+  color: var(--dessertsun--);
+  letter-spacing: 1px;
+}
+
+#hero a:hover {
+  color: var(--dessertsun--);
+  background: var(--navyblue--);
+}
+
+#hero .social-links {
+  margin-top: 30px;
+}
+
+#hero .social-links a {
+  font-size: 24px;
+  display: inline-block;
+  color: var(--dessertsun--);
+  line-height: 1;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+#hero .social-links a:hover {
+  color: var(--dessert--);
+}
+
+@media (max-width: 992px) {
+  #hero {
+    text-align: center;
+  }
+
+  #hero .profile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #hero .profilename {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  #hero p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+/* ----------------------------------------------------------------
+# pang aliw css
+------------------------------------------------------------------ */
+
+.bod {
+  background: var(--BrightGray--);
+  background-blend-mode: multiply;
+  min-block-size: 50vh;
+  display: grid;
+  place-items: center;
+}
+
+pre {
+  --selector: var(--pink);
+  --property: var(--teal);
+  --punctuation: var(--white);
+  --undefined: var(--white);
+
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--undefined);
+  background: hsl(222, 45%, 7%);
+  padding: 5rem;
+  border-radius: 1rem;
+
+  position: relative;
+
+  transform-style: preserve-3d;
+  transform: perspective(5000px) rotateY(var(--rotateX)) rotateX(var(--rotateY));
+}
+
+pre > * {
+  text-shadow: 0 0 0.3em currentColor;
+}
+
+pre::before,
+pre::after {
+  content: "";
+  position: absolute;
+  border-radius: inherit;
+}
+
+/* shadow */
+pre::before {
+  inset: 0.75rem;
+  border-radius: inherit;
+  background: black;
+  z-index: -1;
+  transform: translateZ(-50px);
+  filter: blur(15px);
+  opacity: 0.5;
+}
+
+/* gradient */
+pre::after {
+  z-index: -2;
+  inset: -1rem;
+  background: linear-gradient(-45deg, #20368f, #000b4f);
+  transform: translateZ(-50px);
+}
+
+.selector {
+  color: var(--BrightGray--);
+}
+
+.pre-container {
+  position: relative;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+/* Skills section */
+.more-stuff-grid {
+  background: var(--BrightGray--);
+  padding: 1em 0;
+  display: grid;
+  grid-gap: 1em;
+  align-items: center;
+  grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(
+      1em,
+      1fr
+    );
+}
+
+.from-left {
+  grid-column: 2 / 3;
+}
+
+.from-right {
+  grid-column: 3 / 4;
+}

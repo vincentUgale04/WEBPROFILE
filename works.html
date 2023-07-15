@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+
+    <!-- Favicons -->
+    <link href="../04_IMAGES/-BVUgale-.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Styles Links -->
+    <link rel="stylesheet" href="../02_CSS/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        Cetacean: '#000B4F',
+                        DCchar: '#323232',
+                        BGray: '#EBEBEB',
+                        VBlue: '#829cd0',
+                        DFBlue: '#20368f',
+                    },
+                    zIndex: {
+                        '9997': '9997',
+                    },
+                    inset: {
+                        '-300px': '-300px',
+                    },
+                }
+            }
+
+        }
+    </script>
+
+
+</head>
+
+
+<!-- ===== Body ===== -->
+
+<body class="bg-BGray">
+
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+    <!-- ======= Logo ======= -->
+    <i class="display"><a href="index.html" class="logo self-center shadow-md"><img src="../04_IMAGES/-BVUgale-.png"
+                alt="" class="img-fluid"></a></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex flex-column justify-content-end">
+
+        <!-- Nav Bar -->
+        <nav id="navbar" class="navbar nav-menu">
+            <ul>
+                <li data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in_2s_ease-in-out]"><a
+                        href="index.html" class="nav-link shadow-md"><i class="fa-solid fa-house"></i>
+                        <span>Homepage</span></a>
+                </li>
+
+                <li data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in_2s_ease-in-out]"><a
+                        href="works.html" class="nav-link active shadow-md"><i class="fa-solid fa-folder-open fa-flip"
+                            style="--fa-animation-duration: 3s;"></i>
+                        <span>My
+                            Projects</span></a>
+                </li>
+
+                <li data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in_2s_ease-in-out]"><a
+                        href="contact.html" class="nav-link shadow-md"><i class="fa-solid fa-envelope"></i>
+                        <span>Contact
+                            Details</span></a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <!-- Title -->
+        <section class="flex flex-col justify-center h-96">
+            <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-show-on-load="false"
+                data-te-animation="[fade-in_2s_ease-in-out]"
+                class="text-7xl text-VBlue container flex flex-row justify-center">
+                <h1><i class="fa-solid fa-folder-open"></i> My Projects</h1>
+            </div>
+        </section>
+
+        <!-- #################################### My portfolios ####################################### -->
+        <section>
+            <div class="flex flex-col">
+
+
+                <!-- ##### WebProfile ##### -->
+                <div class="md:container md:mx-auto flex flex-col items-center">
+                    <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                        <div class="mr-14">
+                            <img src="./04_IMAGES/Portfolio/WebProfile.png"
+                                class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <!-- Title & Description -->
+                            <div class="flex flex-col justify-center pb-16">
+                                <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                    My WebProfile</h3>
+                                <p class="text-DCchar">Kode Go Project & My Portfolio Website </p>
+
+                            </div>
+                            <!-- SourceCode and Link -->
+                            <div class="flex flex-row justify-between">
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://github.com/vincentUgale04/WEBPROFILE" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Source Code</a>
+                                </p>
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="index.html" class="hover:VBlue"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i> Visit Website</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- ##### Wanderpets Website ##### -->
+                <div class="md:container md:mx-auto flex flex-col items-center">
+                    <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                        <div class="mr-14">
+                            <img src="./04_IMAGES/Portfolio/Wanderpets.png"
+                                class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <!-- Title & Description -->
+                            <div class="flex flex-col justify-center pb-16">
+                                <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                    WanderPets : Veterinary Clinic</h3>
+                                <p class="text-DCchar">A Front-End vet clinic website for veterinary clinics </p>
+
+                            </div>
+                            <!-- SourceCode and Link -->
+                            <div class="flex flex-row justify-between">
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://github.com/vincentUgale04/Wanderpets_ClinicWebsite"
+                                        target="_blank">
+                                        <i class="fa-brands fa-github"></i> Source Code</a>
+                                </p>
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://clinicvet.netlify.app/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                                        Website</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ##### ImperialHomes Website ##### -->
+                <div class="md:container md:mx-auto flex flex-col items-center">
+                    <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                        <div class="mr-14">
+                            <img src="./04_IMAGES/Portfolio/imperialhomes.png"
+                                class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <!-- Title & Description -->
+                            <div class="flex flex-col justify-center pb-16">
+                                <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                    ImperialHomes : Real Estate Website</h3>
+                                <p class="text-DCchar">A Full-Stack real estate website to buy and sell properties </p>
+
+                            </div>
+                            <!-- SourceCode and Link -->
+                            <div class="flex flex-row justify-between">
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://github.com/vincentUgale04/imperialhomes-fromugale" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Source Code</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ##### Hotel Website ##### -->
+                <div class="md:container md:mx-auto flex flex-col items-center">
+                    <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                        <div class="mr-14">
+                            <img src="./04_IMAGES/Portfolio/HotelWebsite.jpg"
+                                class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <!-- Title & Description -->
+                            <div class="flex flex-col justify-center pb-16">
+                                <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                    Hotel</h3>
+                                <p class="text-DCchar">Front end application for hotel websites</p>
+
+                            </div>
+                            <!-- SourceCode and Link -->
+                            <div class="flex flex-row justify-between">
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://github.com/vincentUgale04/HotelWebsite" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Source Code</a>
+                                </p>
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://devhotelwebsite.netlify.app/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                                        Website</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ##### KodeLedger Website ##### -->
+                <div class="md:container md:mx-auto flex flex-col items-center">
+                    <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                        <div class="mr-14">
+                            <img src="./04_IMAGES/Portfolio/kodeledger.jpg"
+                                class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <!-- Title & Description -->
+                            <div class="flex flex-col justify-center pb-16">
+                                <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                    KodeLedger</h3>
+                                <p class="text-DCchar">A Kode ledger front end application</p>
+
+                            </div>
+                            <!-- SourceCode and Link -->
+                            <div class="flex flex-row justify-between">
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://github.com/vincentUgale04/KodeLedgerWebsite" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Source Code</a>
+                                </p>
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://devkodeledger.netlify.app/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                                        Website</a>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ##### NewsGrid Website ##### -->
+                <div class="md:container md:mx-auto flex flex-col items-center">
+                    <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                        <div class="mr-14">
+                            <img src="./04_IMAGES/Portfolio/newsgrid.jpg"
+                                class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                        </div>
+                        <div class="flex flex-col justify-center">
+                            <!-- Title & Description -->
+                            <div class="flex flex-col justify-center pb-16">
+                                <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                    NewsGrid</h3>
+                                <p class="text-DCchar">A Front end application for News</p>
+
+                            </div>
+                            <!-- SourceCode and Link -->
+                            <div class="flex flex-row justify-between">
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://github.com/vincentUgale04/NewsGridWebsite" target="_blank">
+                                        <i class="fa-brands fa-github"></i> Source Code</a>
+                                </p>
+                                <p class="text-DCchar hover:text-VBlue">
+                                    <a href="https://devnewsgrid.netlify.app/" target="_blank"><i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                                        Website</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ##### Guess my Number Website ##### -->
+                    <div class="md:container md:mx-auto flex flex-col items-center">
+                        <div class="flex flex-col lg:flex-row content-baseline w-4/5 pb-8 ">
+                            <div class="mr-14">
+                                <img src="./04_IMAGES/Portfolio/guestmynumber.jpg"
+                                    class="h-auto 2xl:max-w-md lg:max-w-md md:max-w-full rounded-lg" alt="" />
+                            </div>
+                            <div class="flex flex-col justify-center">
+                                <!-- Title & Description -->
+                                <div class="flex flex-col justify-center pb-16">
+                                    <h3 class="text-VBlue text-2xl font-bold mb-2">
+                                        Guess My Number</h3>
+                                    <p class="text-DCchar"> Guess my number javascript game application</p>
+
+                                </div>
+                                <!-- SourceCode and Link -->
+                                <div class="flex flex-row justify-between">
+                                    <p class="text-DCchar hover:text-VBlue">
+                                        <a href="https://github.com/vincentUgale04/Guessmynumber" target="_blank">
+                                            <i class="fa-brands fa-github"></i> Source Code</a>
+                                    </p>
+                                    <p class="text-DCchar hover:text-VBlue">
+                                        <a href="https://devguessmynumber.netlify.app" target="_blank"><i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                                            Website</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+
+    </main>
+
+
+
+
+
+    <!-- ################################################################## Footer ################################################################## -->
+    <footer id="footer" class="bg-BGray text-DChar text-center pt-8 pb-8">
+        <div class="container flex flex-col md:flex-row justify-around">
+
+            <div data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                data-te-animation-show-on-load="false" data-te-animation="[fade-in_2s_ease-in-out]"
+                class="flex flex-col">
+                <div class="copyright">
+                    2023 &copy; Copyright <strong><span class="text-VBlue">WebProfile BVUgale</span></strong>. All
+                    Rights Reserved
+                </div>
+
+                <div class="credits text-sm">
+                    Designed & Developed by <a href="index.html" class="text-DFBlue hover:text-VBlue">Brian-Vincent
+                        Ugale</a>
+                </div>
+            </div>
+
+            <div class="ContactLinks flex flex-row justify-center p-3 text-VBlue">
+                <p data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in-right_1s_ease-in-out]"
+                    onclick="copyFacebook()" class="pl-1 hover:text-DCchar hover:cursor-pointer"><i
+                        class="fa-brands fa-facebook fa-2xl"></i>
+                </p>
+                <p data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in-right_2s_ease-in-out]"
+                    onclick="copyEmail()" class="pl-1 hover:text-DCchar hover:cursor-pointer"><i
+                        class="fa-solid fa-envelope fa-2xl"></i>
+                </p>
+                <p data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in-right_3s_ease-in-out]"
+                    class="pl-1 hover:text-DCchar mb-3">
+                    <a href="https://github.com/vincentUgale04" target="_blank"><i
+                            class="fa-brands fa-github fa-2xl"></i>
+                    </a>
+                </p>
+                <p data-te-animation-init data-te-animation-start="onScroll" data-te-animation-on-scroll="repeat"
+                    data-te-animation-show-on-load="false" data-te-animation="[fade-in-right_3s_ease-in-out]"
+                    class="pl-1 hover:text-DCchar mb-3">
+                    <a href="https://www.canva.com/design/DAFor1itXks/ucxI08MzgKRdovN8bNp4-A/edit?utm_content=DAFor1itXks&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                        target="_blank"><i class="fa-solid fa-file-arrow-down fa-2xl"></i> </a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS FILES -->
+    <script type="text/javascript" src="./03_JS/main.js"></script>
+    <script src="./03_JS/effects.js"></script>
+    <script src="./03_JS/copytoclipboard.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6c7763194c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
